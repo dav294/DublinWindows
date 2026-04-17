@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dublin Windows | Sash Window Restoration &amp; Repair Specialists</title>
+  <meta name="description" content="Specialists in sash window restoration and repair for period properties across Ireland. Nearly two decades of precision craftsmanship. Based in Dublin 2.">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@studio-freight/lenis@1.0.42/dist/lenis.min.js"></script>
+
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- ─── NAVIGATION ─────────────────────────────────────────────── -->
+  <nav class="nav" id="nav">
+    <div class="nav-inner">
+      <a href="#hero" class="nav-logo">
+        <img src="assets/dublin-windows-logo.png" alt="Dublin Windows" class="nav-logo-img">
+      </a>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#why">Why Us</a></li>
+        <li><a href="#testimonials">Reviews</a></li>
+        <li><a href="#contact" class="nav-cta">Free Quote</a></li>
+      </ul>
+      <button class="burger" id="burger" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Mobile nav overlay -->
+  <div class="mobile-nav" id="mobileNav">
+    <button class="mobile-nav-close" id="mobileClose" aria-label="Close menu">✕</button>
+    <ul>
+      <li><a href="#about">About</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#why">Why Us</a></li>
+      <li><a href="#testimonials">Reviews</a></li>
+      <li><a href="#contact">Get a Quote</a></li>
+    </ul>
+    <div class="mobile-nav-foot">
+      <a href="tel:+353862441000">+353 86 244 1000</a>
+      <a href="mailto:office@dublinwindows.ie">office@dublinwindows.ie</a>
+    </div>
+  </div>
+
+  <!-- ─── HERO ───────────────────────────────────────────────────── -->
+  <section class="hero" id="hero">
+    <div class="hero-pane-grid" aria-hidden="true">
+      <div class="pane-col"></div>
+      <div class="pane-col"></div>
+      <div class="pane-col"></div>
+      <div class="pane-col"></div>
+      <div class="pane-row"></div>
+      <div class="pane-row"></div>
+    </div>
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <div class="hero-eyebrow">
+        <div class="eyebrow-rule"></div>
+        <span>Period Property Specialists · Dublin</span>
+      </div>
+      <h1 class="hero-title">
+        <span class="ht-line">Sash Window</span>
+        <em class="ht-line ht-italic">Restoration</em>
+        <span class="ht-line">&amp; Repair</span>
+      </h1>
+      <p class="hero-sub">
+        Nearly two decades of precision craftsmanship, preserving Ireland's<br>
+        architectural heritage — one window at a time.
+      </p>
+      <div class="hero-actions">
+        <a href="#contact" class="btn btn-gold">Get a Free Quote</a>
+        <a href="#services" class="btn btn-ghost">Our Services</a>
+      </div>
+      <div class="hero-trust">
+        <div class="trust-stars">
+          <svg viewBox="0 0 16 16" fill="currentColor"><path d="M8 1l1.8 3.6 4 .6-2.9 2.8.7 4L8 10l-3.6 1.9.7-4L2.2 5.2l4-.6z"/></svg>
+          <svg viewBox="0 0 16 16" fill="currentColor"><path d="M8 1l1.8 3.6 4 .6-2.9 2.8.7 4L8 10l-3.6 1.9.7-4L2.2 5.2l4-.6z"/></svg>
+          <svg viewBox="0 0 16 16" fill="currentColor"><path d="M8 1l1.8 3.6 4 .6-2.9 2.8.7 4L8 10l-3.6 1.9.7-4L2.2 5.2l4-.6z"/></svg>
+          <svg viewBox="0 0 16 16" fill="currentColor"><path d="M8 1l1.8 3.6 4 .6-2.9 2.8.7 4L8 10l-3.6 1.9.7-4L2.2 5.2l4-.6z"/></svg>
+          <svg viewBox="0 0 16 16" fill="currentColor"><path d="M8 1l1.8 3.6 4 .6-2.9 2.8.7 4L8 10l-3.6 1.9.7-4L2.2 5.2l4-.6z"/></svg>
+        </div>
+        <span class="trust-text"><strong>Five Stars</strong> on Google &nbsp;·&nbsp; Serving Dublin &amp; all of Ireland</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── ABOUT ─────────────────────────────────────────────────── -->
+  <section class="about" id="about">
+    <div class="container">
+      <div class="about-intro" data-reveal="fade">
+        <span class="section-label">Who We Are</span>
+        <h2 class="section-title">Craftsmanship, Functionality<br><em>and Longevity</em></h2>
+        <p class="about-lead">Dublin Windows is Ireland's specialist in sash window restoration. With nearly two decades of experience, we combine traditional joinery skills with modern techniques to bring period windows back to their original beauty — and keep them there.</p>
+      </div>
+      <div class="about-cards">
+        <div class="about-card" data-reveal="scale">
+          <div class="about-card-icon">
+            <svg viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="1.3">
+              <rect x="5" y="5" width="30" height="30" rx="1"/>
+              <line x1="5" y1="20" x2="35" y2="20"/>
+              <line x1="20" y1="5" x2="20" y2="35"/>
+              <line x1="5" y1="12" x2="35" y2="12"/>
+              <line x1="5" y1="28" x2="35" y2="28"/>
+            </svg>
+          </div>
+          <h3>Period Expertise</h3>
+          <p>We specialise exclusively in sash and casement windows for period properties — understanding the historic architecture they belong to.</p>
+          <a href="#services" class="about-card-link">Our Services →</a>
+        </div>
+        <div class="about-card" data-reveal="scale">
+          <div class="about-card-icon">
+            <svg viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="1.3">
+              <path d="M20 4l14 7v10c0 8-6 14-14 16C12 35 6 29 6 21V11z"/>
+              <path d="M14 20l4 4 8-8"/>
+            </svg>
+          </div>
+          <h3>Precision Workmanship</h3>
+          <p>Every restoration is carried out with meticulous attention to detail — from timber repairs and glass replacement to hardware and weatherproofing.</p>
+          <a href="#why" class="about-card-link">Why Choose Us →</a>
+        </div>
+        <div class="about-card" data-reveal="scale">
+          <div class="about-card-icon">
+            <svg viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="1.3">
+              <circle cx="20" cy="20" r="14"/>
+              <path d="M20 10v10l6 5"/>
+              <path d="M8 28l4-3M32 28l-4-3"/>
+            </svg>
+          </div>
+          <h3>Built to Last</h3>
+          <p>Using only high-quality materials and proven methods, our restorations deliver long-term performance — preserving your windows for decades to come.</p>
+          <a href="#contact" class="about-card-link">Get a Quote →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── SERVICES ──────────────────────────────────────────────── -->
+  <section class="services" id="services">
+    <div class="container">
+      <div class="services-header" data-reveal="fade">
+        <span class="section-label">What We Do</span>
+        <h2 class="section-title">A complete window<br><em>restoration service</em></h2>
+      </div>
+      <div class="services-grid">
+
+        <article class="serv-card" data-reveal="scale">
+          <span class="serv-num">01</span>
+          <div class="serv-icon">
+            <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.2">
+              <rect x="4" y="4" width="40" height="40" rx="1"/>
+              <line x1="4" y1="24" x2="44" y2="24"/>
+              <line x1="24" y1="4" x2="24" y2="44"/>
+              <line x1="4" y1="14" x2="44" y2="14"/>
+              <line x1="4" y1="34" x2="44" y2="34"/>
+            </svg>
+          </div>
+          <h3>Sash Window Restoration</h3>
+          <p>Full in-situ restoration of timber sash windows — repairing broken sashes, replacing pulleys, rebalancing cords, and refinishing frames to their original condition.</p>
+          <a href="#contact" class="serv-link">Enquire →</a>
+        </article>
+
+        <article class="serv-card" data-reveal="scale">
+          <span class="serv-num">02</span>
+          <div class="serv-icon">
+            <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.2">
+              <path d="M6 42L42 6M10 6h10M6 10v10"/>
+              <rect x="16" y="16" width="20" height="20" rx="1"/>
+              <path d="M20 20h12v12"/>
+            </svg>
+          </div>
+          <h3>Draught-Proofing</h3>
+          <p>Specialist timber window draught-proofing using precision-fit weatherstripping — eliminating cold air, reducing heat loss, and dramatically cutting energy bills.</p>
+          <a href="#contact" class="serv-link">Enquire →</a>
+        </article>
+
+        <article class="serv-card" data-reveal="scale">
+          <span class="serv-num">03</span>
+          <div class="serv-icon">
+            <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.2">
+              <rect x="4" y="4" width="40" height="40" rx="1"/>
+              <rect x="10" y="10" width="28" height="28" rx="1" stroke-dasharray="3 2"/>
+              <circle cx="24" cy="24" r="6"/>
+              <path d="M24 18v-4M24 34v-4M18 24h-4M34 24h-4"/>
+            </svg>
+          </div>
+          <h3>Double Glazing</h3>
+          <p>Secondary and slim-profile double glazing solutions engineered specifically for period sash windows — improving thermal performance without altering historic character.</p>
+          <a href="#contact" class="serv-link">Enquire →</a>
+        </article>
+
+        <article class="serv-card" data-reveal="scale">
+          <span class="serv-num">04</span>
+          <div class="serv-icon">
+            <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.2">
+              <rect x="4" y="4" width="40" height="40" rx="1"/>
+              <line x1="4" y1="24" x2="44" y2="24"/>
+              <line x1="24" y1="4" x2="24" y2="44"/>
+              <circle cx="24" cy="24" r="3" fill="currentColor" stroke="none"/>
+            </svg>
+          </div>
+          <h3>New Sash Windows</h3>
+          <p>Bespoke replacement sash windows crafted to your exact specification — matching original profiles, glazing bars, glass type, and hardware for a seamless period look.</p>
+          <a href="#contact" class="serv-link">Enquire →</a>
+        </article>
+
+        <article class="serv-card" data-reveal="scale">
+          <span class="serv-num">05</span>
+          <div class="serv-icon">
+            <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.2">
+              <rect x="4" y="4" width="20" height="40" rx="1"/>
+              <rect x="24" y="4" width="20" height="40" rx="1"/>
+              <path d="M24 12h4M24 24h4M24 36h4"/>
+            </svg>
+          </div>
+          <h3>Timber Casement Windows</h3>
+          <p>Traditional timber casement repair and replacement — maintaining the architectural integrity of period homes and protected structures across Ireland.</p>
+          <a href="#contact" class="serv-link">Enquire →</a>
+        </article>
+
+        <article class="serv-card serv-card--accent" data-reveal="scale">
+          <span class="serv-num">06</span>
+          <div class="serv-icon">
+            <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.2">
+              <path d="M24 4l4 8 9 1.3-6.5 6.3 1.5 9L24 24l-8 4.6 1.5-9L11 13.3l9-1.3z"/>
+              <path d="M24 28v16M18 40h12"/>
+            </svg>
+          </div>
+          <h3>Window Maintenance</h3>
+          <p>Ongoing care programmes to keep your windows performing year after year — adjustments, resealing, hardware servicing, and periodic inspections included.</p>
+          <a href="#contact" class="serv-link">Book a Service →</a>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── LANDMARK STRIP ─────────────────────────────────────────── -->
+  <div class="landmark-strip">
+    <div class="container">
+      <div class="landmark-inner">
+        <div class="landmark-label">
+          <span class="section-label light">Notable Projects</span>
+          <p>From residential homes to Ireland's most iconic buildings</p>
+        </div>
+        <ul class="landmark-list">
+          <li>National Museum of Ireland</li>
+          <li>Ballast House, Westmoreland St.</li>
+          <li>Rathmines Army Barracks</li>
+          <li>Regus, Pembroke House</li>
+          <li>Hybreasal House</li>
+          <li>Private Residences, South Co. Dublin</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- ─── STATS ──────────────────────────────────────────────────── -->
+  <section class="stats" id="stats">
+    <div class="container">
+      <div class="stats-grid">
+        <div class="stat-item" data-reveal="fade">
+          <span class="stat-n"><span class="counter" data-target="20">0</span><sup>+</sup></span>
+          <span class="stat-l">Years Experience</span>
+        </div>
+        <div class="stat-item" data-reveal="fade">
+          <span class="stat-n">5<sup>★</sup></span>
+          <span class="stat-l">Google Rating</span>
+        </div>
+        <div class="stat-item" data-reveal="fade">
+          <span class="stat-n"><span class="counter" data-target="100">0</span><sup>+</sup></span>
+          <span class="stat-l">Projects Completed</span>
+        </div>
+        <div class="stat-item" data-reveal="fade">
+          <span class="stat-n">IE</span>
+          <span class="stat-l">Nationwide Service</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── WHY US ─────────────────────────────────────────────────── -->
+  <section class="why" id="why">
+    <div class="container">
+      <div class="why-inner">
+        <div class="why-left" data-reveal="left">
+          <span class="section-label light">Why Dublin Windows?</span>
+          <h2 class="section-title light">Passion for the craft.<br><em>Respect for the past.</em></h2>
+          <p class="why-intro">We understand that period windows are more than glass and timber — they are part of a building's character and history. Our approach honours that, with every job done to the highest standard.</p>
+          <a href="#contact" class="btn btn-outline-light">Get a Free Quote</a>
+        </div>
+        <ul class="why-list" data-reveal="right">
+          <li class="why-item">
+            <div class="why-tick">✓</div>
+            <div class="why-copy">
+              <strong>Sash Window Specialists</strong>
+              <p>Exclusive focus on period windows means deeper expertise than any general contractor can offer.</p>
+            </div>
+          </li>
+          <li class="why-item">
+            <div class="why-tick">✓</div>
+            <div class="why-copy">
+              <strong>Restoration Over Replacement</strong>
+              <p>We repair and restore wherever possible — preserving original fabric, reducing waste, and saving you money.</p>
+            </div>
+          </li>
+          <li class="why-item">
+            <div class="why-tick">✓</div>
+            <div class="why-copy">
+              <strong>Heritage-Approved Methods</strong>
+              <p>Our techniques are sympathetic to protected structures and conservation areas across Ireland.</p>
+            </div>
+          </li>
+          <li class="why-item">
+            <div class="why-tick">✓</div>
+            <div class="why-copy">
+              <strong>Free Assessments</strong>
+              <p>We visit your property, assess the condition of your windows, and provide a clear, honest quote — no obligation.</p>
+            </div>
+          </li>
+          <li class="why-item">
+            <div class="why-tick">✓</div>
+            <div class="why-copy">
+              <strong>All Work Guaranteed</strong>
+              <p>Every job is backed by our workmanship guarantee. We stand behind everything we do, long after we leave.</p>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── TESTIMONIALS ───────────────────────────────────────────── -->
+  <section class="testimonials" id="testimonials">
+    <div class="container">
+      <div class="testi-header" data-reveal="fade">
+        <span class="section-label">What Our Customers Say</span>
+        <h2 class="section-title">Trusted by homeowners<br><em>across Ireland</em></h2>
+      </div>
+      <div class="testi-grid">
+
+        <div class="testi-card" data-reveal="bottom">
+          <div class="testi-quote">"</div>
+          <blockquote>It was a pleasure dealing with Dublin Windows. Great when someone turns up on time, does exactly what they promised — with no fuss or bother.</blockquote>
+          <div class="testi-meta">
+            <div class="testi-avatar">PN</div>
+            <div class="testi-info">
+              <strong>P. Nolan</strong>
+              <div class="testi-stars">★★★★★</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="testi-card" data-reveal="bottom">
+          <div class="testi-quote">"</div>
+          <blockquote>We have to say that the windows are superb. Thanks again for another fine job — we are so happy we found you!</blockquote>
+          <div class="testi-meta">
+            <div class="testi-avatar">TR</div>
+            <div class="testi-info">
+              <strong>T. &amp; A. Ryan</strong>
+              <div class="testi-stars">★★★★★</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="testi-card" data-reveal="bottom">
+          <div class="testi-quote">"</div>
+          <blockquote>Dublin Windows have transformed the appearance of our house inside and out. We have received so many positive comments from friends and neighbours.</blockquote>
+          <div class="testi-meta">
+            <div class="testi-avatar">MB</div>
+            <div class="testi-info">
+              <strong>M. &amp; F. Byrne</strong>
+              <div class="testi-stars">★★★★★</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="testi-card" data-reveal="bottom">
+          <div class="testi-quote">"</div>
+          <blockquote>Jacob, I have one word — WOW! I didn't for one minute think you would be able to repair them. I thought they were too far gone to bring back to life.</blockquote>
+          <div class="testi-meta">
+            <div class="testi-avatar">SW</div>
+            <div class="testi-info">
+              <strong>S. White</strong>
+              <div class="testi-stars">★★★★★</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="testi-card testi-card--cta" data-reveal="bottom">
+          <p>Join our growing list of satisfied customers across Dublin and beyond.</p>
+          <a href="#contact" class="btn btn-gold">Get Your Free Quote</a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── CONTACT ────────────────────────────────────────────────── -->
+  <section class="contact" id="contact">
+    <div class="container">
+      <div class="contact-inner">
+        <div class="contact-left" data-reveal="fade">
+          <span class="section-label light">Get in Touch</span>
+          <h2 class="section-title light contact-h">Let's talk<br><em>windows</em></h2>
+          <p class="contact-sub">Call us, drop an email, or fill in the form.<br>Free assessments — no obligation.</p>
+          <div class="contact-details">
+            <a href="tel:+353862441000" class="contact-item">
+              <div class="ci-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                  <path d="M22 16.9v3a2 2 0 01-2.2 2 19.8 19.8 0 01-8.6-3.1 19.5 19.5 0 01-6-6 19.8 19.8 0 01-3.1-8.7A2 2 0 014.1 2h3a2 2 0 012 1.7c.1 1 .4 2 .8 2.9a2 2 0 01-.4 2.1L8.1 9.9a16 16 0 006 6l1.2-1.4a2 2 0 012.1-.4c.9.4 1.9.6 2.9.7a2 2 0 011.7 2.1z"/>
+                </svg>
+              </div>
+              <div>
+                <span class="ci-label">Call Us</span>
+                <span class="ci-value">+353 86 244 1000</span>
+              </div>
+            </a>
+            <a href="mailto:office@dublinwindows.ie" class="contact-item">
+              <div class="ci-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                  <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                  <polyline points="22,6 12,13 2,6"/>
+                </svg>
+              </div>
+              <div>
+                <span class="ci-label">Email</span>
+                <span class="ci-value">office@dublinwindows.ie</span>
+              </div>
+            </a>
+            <div class="contact-item">
+              <div class="ci-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                  <path d="M21 10c0 7-9 13-9 13S3 17 3 10a9 9 0 0118 0z"/>
+                  <circle cx="12" cy="10" r="3"/>
+                </svg>
+              </div>
+              <div>
+                <span class="ci-label">Address</span>
+                <span class="ci-value">13 Adelaide Road, St. Kevin's<br>Dublin 2, Ireland</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="contact-right" data-reveal="fade">
+          <div class="quote-form-wrap">
+            <h3>Get a Free Quote</h3>
+            <form class="quote-form" name="quote" action="#" method="POST">
+              <div class="form-group">
+                <label for="q-name">Name</label>
+                <input type="text" id="q-name" name="name" placeholder="Your full name" required>
+              </div>
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="q-email">Email</label>
+                  <input type="email" id="q-email" name="email" placeholder="you@example.com" required>
+                </div>
+                <div class="form-group">
+                  <label for="q-phone">Phone</label>
+                  <input type="tel" id="q-phone" name="phone" placeholder="e.g. 086 000 0000">
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="q-service">Service Required</label>
+                <select id="q-service" name="service">
+                  <option value="" disabled selected>Select a service…</option>
+                  <option>Sash Window Restoration</option>
+                  <option>Draught-Proofing</option>
+                  <option>Double Glazing</option>
+                  <option>New Sash Windows</option>
+                  <option>Timber Casement Windows</option>
+                  <option>Window Maintenance</option>
+                  <option>Other / Not Sure</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="q-comments">Details</label>
+                <textarea id="q-comments" name="comments" placeholder="Tell us about your windows — age of property, current condition, what you'd like done…"></textarea>
+              </div>
+              <button type="submit" class="form-submit-btn">Send Enquiry</button>
+            </form>
+          </div>
+        </div>
+      </div>
+
+      <div class="contact-map" data-reveal="fade">
+        <iframe
+          src="https://maps.google.com/maps?q=13+Adelaide+Road+St+Kevins+Dublin+2+Ireland&z=15&output=embed"
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+          title="Dublin Windows location"
+          allowfullscreen>
+        </iframe>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── FOOTER ─────────────────────────────────────────────────── -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-inner">
+        <div class="footer-brand">
+          <img src="assets/dublin-windows-logo.png" alt="Dublin Windows" class="footer-logo-img">
+          <p>Sash window restoration specialists.<br>Serving Dublin and all of Ireland.</p>
+          <div class="footer-social">
+            <a href="https://www.instagram.com/dublinwindows" target="_blank" rel="noopener" aria-label="Instagram">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="18" height="18">
+                <rect x="2" y="2" width="20" height="20" rx="5"/>
+                <circle cx="12" cy="12" r="4"/>
+                <circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/>
+              </svg>
+            </a>
+            <a href="https://www.tiktok.com/@dublinwindows" target="_blank" rel="noopener" aria-label="TikTok">
+              <svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18">
+                <path d="M19.59 6.69a4.83 4.83 0 01-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 01-2.88 2.5 2.89 2.89 0 01-2.89-2.89 2.89 2.89 0 012.89-2.89c.28 0 .54.04.79.1V9.01a6.31 6.31 0 00-.79-.05A6.34 6.34 0 003.15 15.2a6.34 6.34 0 006.34 6.34 6.34 6.34 0 006.33-6.34V8.69a8.17 8.17 0 004.78 1.52V6.76a4.85 4.85 0 01-1.01-.07z"/>
+              </svg>
+            </a>
+          </div>
+        </div>
+        <nav class="footer-nav">
+          <a href="#about">About</a>
+          <a href="#services">Services</a>
+          <a href="#why">Why Us</a>
+          <a href="#testimonials">Reviews</a>
+          <a href="#contact">Contact</a>
+        </nav>
+        <div class="footer-contact">
+          <a href="tel:+353862441000">+353 86 244 1000</a>
+          <a href="mailto:office@dublinwindows.ie">office@dublinwindows.ie</a>
+          <span>13 Adelaide Road, St. Kevin's<br>Dublin 2, Ireland</span>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2025 Dublin Windows. All rights reserved. &nbsp;·&nbsp; Dublin 2, Ireland</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/app.js"></script>
+</body>
+</html>
