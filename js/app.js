@@ -226,26 +226,30 @@ document.querySelectorAll('a[href^="#"]').forEach(a => {
   });
 });
 
-/* ── Hero parallax ────────────────────────────────────────────── */
-gsap.to('.hero-content', {
-  scrollTrigger: {
-    trigger: '.hero',
-    start: 'top top',
-    end: 'bottom top',
-    scrub: 1.2,
-  },
-  y: 70,
-  ease: 'none',
-});
+/* ── Hero parallax (homepage only) ───────────────────────────── */
+if (document.querySelector('.hero-content')) {
+  gsap.to('.hero-content', {
+    scrollTrigger: {
+      trigger: '.hero',
+      start: 'top top',
+      end: 'bottom top',
+      scrub: 1.2,
+    },
+    y: 70,
+    ease: 'none',
+  });
+}
 
-/* ── Pane grid parallax (subtle depth) ───────────────────────── */
-gsap.to('.hero-pane-grid', {
-  scrollTrigger: {
-    trigger: '.hero',
-    start: 'top top',
-    end: 'bottom top',
-    scrub: 0.8,
-  },
-  y: -30,
-  ease: 'none',
-});
+/* ── Pane grid parallax (homepage only) ──────────────────────── */
+if (document.querySelector('.hero-pane-grid')) {
+  gsap.to('.hero-pane-grid', {
+    scrollTrigger: {
+      trigger: '.hero',
+      start: 'top top',
+      end: 'bottom top',
+      scrub: 0.8,
+    },
+    y: -30,
+    ease: 'none',
+  });
+}
