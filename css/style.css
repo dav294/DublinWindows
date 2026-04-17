@@ -307,7 +307,8 @@ button { background: none; border: none; cursor: pointer; font: inherit; }
   inset: 0;
   z-index: 1;
   background:
-    radial-gradient(ellipse 70% 80% at 0% 50%, rgba(10,18,18,0.6) 0%, transparent 70%),
+    linear-gradient(to bottom, rgba(10,18,18,0.45) 0%, rgba(10,18,18,0.55) 100%),
+    radial-gradient(ellipse 70% 80% at 0% 50%, rgba(10,18,18,0.55) 0%, transparent 70%),
     radial-gradient(ellipse 50% 60% at 100% 100%, rgba(200,184,138,0.04) 0%, transparent 60%);
 }
 .hero-content {
@@ -592,6 +593,7 @@ button { background: none; border: none; cursor: pointer; font: inherit; }
 .work-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, auto);
   gap: 1px;
   background: var(--border-lt);
 }
@@ -600,16 +602,10 @@ button { background: none; border: none; cursor: pointer; font: inherit; }
   overflow: hidden;
   background: var(--bg-strip);
 }
-.work-card--featured {
-  grid-column: span 2;
-}
 .work-img-wrap {
   width: 100%;
   height: 280px;
   overflow: hidden;
-}
-.work-card--featured .work-img-wrap {
-  height: 340px;
 }
 .work-img {
   width: 100%;
