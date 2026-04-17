@@ -73,19 +73,9 @@ document.querySelectorAll('.ht-line').forEach((line, i) => {
 });
 
 heroTL
-  .to('.hero-eyebrow', { opacity: 1, y: 0, duration: 1.0, ease: 'expo.out' }, 0.1)
-  .to('.hero-sub',     { opacity: 1, y: 0, duration: 1.0, ease: 'expo.out' }, 0.5)
-  .to('.hero-actions', { opacity: 1, y: 0, duration: 1.0, ease: 'expo.out' }, 0.65)
-  .to('.hero-trust',   { opacity: 1, y: 0, duration: 1.0, ease: 'expo.out' }, 0.78);
-
-/* ── Hero pane-grid subtle entrance ──────────────────────────── */
-gsap.set('.hero-pane-grid', { opacity: 0 });
-gsap.to('.hero-pane-grid', {
-  opacity: 1,
-  duration: 3.0,
-  ease: 'power1.out',
-  delay: 0.6,
-});
+  .to('.hero-sub',     { opacity: 1, y: 0, duration: 1.0, ease: 'expo.out' }, 0.42)
+  .to('.hero-actions', { opacity: 1, y: 0, duration: 1.0, ease: 'expo.out' }, 0.58)
+  .to('.hero-trust',   { opacity: 1, y: 0, duration: 1.0, ease: 'expo.out' }, 0.72);
 
 /* ── Section Reveal Helper ────────────────────────────────────── */
 function clearReveal(el) {
